@@ -1,0 +1,3 @@
+[submodule "libs/bil"]
+	path = libs/bil
+	url = git@github.com:llpm/bil.git

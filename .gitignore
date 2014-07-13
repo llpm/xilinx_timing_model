@@ -1,3 +1,8 @@
+/docs
+/example
+
+.sconsign.dblite
+
 # Compiled Object files
 *.slo
 *.lo
