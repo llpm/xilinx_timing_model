@@ -1,6 +1,11 @@
+# Local dirs
 /docs
 /example
 
+# Binaries
+/test
+
+# Build tmp
 .sconsign.dblite
 
 # Compiled Object files
