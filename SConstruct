@@ -9,7 +9,9 @@ env = Environment(CPPPATH=['./libs/bil/src'],
 bil = env.Library('bil', Glob("./libs/bil/src/*/*.cpp") +
                          Glob("./libs/bil/src/*/*/*.cpp"))
 
-env.Append(LIBS=[bil])
+llpm = env.Library('llpm', Glob("./lib/*.cpp") +
+                         Glob("./lib/*/*.cpp"))
+env.Append(LIBS=[bil, llpm])
 
 for d in Glob("./drivers/*"):
     d = str(d).split("/")[-1]
